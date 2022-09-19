@@ -15,6 +15,8 @@
 		7C366DCF28D7025D00893D04 /* TopMoviersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C366DCE28D7025D00893D04 /* TopMoviersView.swift */; };
 		7C366DD328D7028500893D04 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C366DD228D7028500893D04 /* TopMoversItemView.swift */; };
 		7C67DD3A28D7560700C2E83C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67DD3928D7560700C2E83C /* View.swift */; };
+		7C67DD3F28D8B95900C2E83C /* CoinDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67DD3E28D8B95900C2E83C /* CoinDetailsView.swift */; };
+		7C67DD4228D8BAFD00C2E83C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67DD4128D8BAFD00C2E83C /* Color.swift */; };
 		7C85C20C28D7085F00640FA4 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85C20B28D7085F00640FA4 /* AllCoinsView.swift */; };
 		7C85C20E28D7086D00640FA4 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85C20D28D7086D00640FA4 /* CoinRowView.swift */; };
 		7C85C21128D71AD500640FA4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85C21028D71AD500640FA4 /* HomeViewModel.swift */; };
@@ -33,6 +35,8 @@
 		7C366DCE28D7025D00893D04 /* TopMoviersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviersView.swift; sourceTree = "<group>"; };
 		7C366DD228D7028500893D04 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		7C67DD3928D7560700C2E83C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7C67DD3E28D8B95900C2E83C /* CoinDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsView.swift; sourceTree = "<group>"; };
+		7C67DD4128D8BAFD00C2E83C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		7C85C20B28D7085F00640FA4 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		7C85C20D28D7086D00640FA4 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		7C85C21028D71AD500640FA4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		7C366DC228D7007200893D04 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7C67DD3B28D8B90000C2E83C /* CoinDetails */,
 				7C366DC628D700A400893D04 /* Home */,
 			);
 			path = Core;
@@ -120,6 +125,7 @@
 			children = (
 				7C85C21828D751E800640FA4 /* Double.swift */,
 				7C67DD3928D7560700C2E83C /* View.swift */,
+				7C67DD4128D8BAFD00C2E83C /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,6 +162,30 @@
 			isa = PBXGroup;
 			children = (
 				7C85C21028D71AD500640FA4 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7C67DD3B28D8B90000C2E83C /* CoinDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7C67DD3D28D8B91900C2E83C /* ViewModels */,
+				7C67DD3C28D8B91100C2E83C /* Views */,
+			);
+			path = CoinDetails;
+			sourceTree = "<group>";
+		};
+		7C67DD3C28D8B91100C2E83C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C67DD3E28D8B95900C2E83C /* CoinDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C67DD3D28D8B91900C2E83C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,12 +270,14 @@
 				7C366DCC28D7014E00893D04 /* HomeView.swift in Sources */,
 				7C85C20C28D7085F00640FA4 /* AllCoinsView.swift in Sources */,
 				7C366DB628D6FFE100893D04 /* ContentView.swift in Sources */,
+				7C67DD4228D8BAFD00C2E83C /* Color.swift in Sources */,
 				7C85C21128D71AD500640FA4 /* HomeViewModel.swift in Sources */,
 				7C366DCF28D7025D00893D04 /* TopMoviersView.swift in Sources */,
 				7C366DB428D6FFE100893D04 /* CryptocurrencyAppApp.swift in Sources */,
 				7C85C20E28D7086D00640FA4 /* CoinRowView.swift in Sources */,
 				7C85C21928D751E800640FA4 /* Double.swift in Sources */,
 				7C67DD3A28D7560700C2E83C /* View.swift in Sources */,
+				7C67DD3F28D8B95900C2E83C /* CoinDetailsView.swift in Sources */,
 				7C366DD328D7028500893D04 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
