@@ -8,29 +8,33 @@
 import SwiftUI
 
 struct StatisticView: View {
+    let model: StatisticModel
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Current Price")
+            Text(model.title)
                 .font(.caption)
 
-            Text("$21,546.00")
+            Text(model.value)
                 .font(.headline)
 
-            HStack(spacing: 4) {
-                Image(systemName: "triangle.fill")
-                    .font(.caption)
+            if let percentChange = model.percentageChange {
+                HStack(spacing: 4) {
+                    Image(systemName: "triangle.fill")
+                        .font(.caption)
 
-                Text("1.23%")
-                    .font(.caption)
-                    .bold()
+                    Text(percentChange.toPercentString())
+                        .font(.caption)
+                        .bold()
+                }
+                .foregroundColor(.green)
             }
-            .foregroundColor(.green)
         }
     }
 }
 
 struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticView()
+        StatisticView(model: dev.stat1)
     }
 }
