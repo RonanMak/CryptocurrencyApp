@@ -19,6 +19,9 @@ struct CoinDetailsView: View {
         NavigationView {
             ScrollView {
                 // Chart
+                ChartView(viewModel: viewModel)
+                    .frame(height: 250)
+                    .padding(.vertical)
 
                 // Overview
                 CoinDetailsSection(model: viewModel.overviewSectionModel)

@@ -29,6 +29,9 @@
 		7C87BAB828DA04460029ADFF /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BAB728DA04460029ADFF /* PreviewProvider.swift */; };
 		7C87BABA28DA06600029ADFF /* CoinDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BAB928DA06600029ADFF /* CoinDetailSectionModel.swift */; };
 		7C87BABC28DA0AAD0029ADFF /* CoinDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BABB28DA0AAD0029ADFF /* CoinDetailsViewModel.swift */; };
+		7C87BABE28DB5FAB0029ADFF /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BABD28DB5FAB0029ADFF /* ChartData.swift */; };
+		7C87BAC128DB60AE0029ADFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BAC028DB60AE0029ADFF /* Date.swift */; };
+		7C87BAC328DB62620029ADFF /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C87BAC228DB62620029ADFF /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		7C87BAB728DA04460029ADFF /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		7C87BAB928DA06600029ADFF /* CoinDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailSectionModel.swift; sourceTree = "<group>"; };
 		7C87BABB28DA0AAD0029ADFF /* CoinDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewModel.swift; sourceTree = "<group>"; };
+		7C87BABD28DB5FAB0029ADFF /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		7C87BAC028DB60AE0029ADFF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7C87BAC228DB62620029ADFF /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				7C85C21328D7344700640FA4 /* Coin.swift */,
 				7C87BAB528DA03BB0029ADFF /* StatisticModel.swift */,
 				7C87BAB928DA06600029ADFF /* CoinDetailSectionModel.swift */,
+				7C87BABD28DB5FAB0029ADFF /* ChartData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				7C67DD3928D7560700C2E83C /* View.swift */,
 				7C67DD4128D8BAFD00C2E83C /* Color.swift */,
 				7C87BAB728DA04460029ADFF /* PreviewProvider.swift */,
+				7C87BAC028DB60AE0029ADFF /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 				7C67DD3E28D8B95900C2E83C /* CoinDetailsView.swift */,
 				7C67DD4328D8BD2F00C2E83C /* CoinDetailsSection.swift */,
 				7C67DD4528D8BDB800C2E83C /* StatisticView.swift */,
+				7C87BAC228DB62620029ADFF /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +299,8 @@
 				7C85C20C28D7085F00640FA4 /* AllCoinsView.swift in Sources */,
 				7C366DB628D6FFE100893D04 /* ContentView.swift in Sources */,
 				7C87BABA28DA06600029ADFF /* CoinDetailSectionModel.swift in Sources */,
+				7C87BABE28DB5FAB0029ADFF /* ChartData.swift in Sources */,
+				7C87BAC328DB62620029ADFF /* ChartView.swift in Sources */,
 				7C67DD4228D8BAFD00C2E83C /* Color.swift in Sources */,
 				7C85C21128D71AD500640FA4 /* HomeViewModel.swift in Sources */,
 				7C366DCF28D7025D00893D04 /* TopMoviersView.swift in Sources */,
@@ -299,6 +310,7 @@
 				7C87BAB828DA04460029ADFF /* PreviewProvider.swift in Sources */,
 				7C366DB428D6FFE100893D04 /* CryptocurrencyAppApp.swift in Sources */,
 				7C85C20E28D7086D00640FA4 /* CoinRowView.swift in Sources */,
+				7C87BAC128DB60AE0029ADFF /* Date.swift in Sources */,
 				7C85C21928D751E800640FA4 /* Double.swift in Sources */,
 				7C67DD3A28D7560700C2E83C /* View.swift in Sources */,
 				7C67DD3F28D8B95900C2E83C /* CoinDetailsView.swift in Sources */,
@@ -359,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -413,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
